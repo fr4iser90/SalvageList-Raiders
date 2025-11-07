@@ -1,0 +1,49 @@
+services:
+  arc-raiders-salvage:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fr4iser/salvagearc:latest
+    container_name: arc-raiders-salvage
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    dns:
+      - 1.1.1.1
+    networks:
+      - proxy
+    labels:
+      # Basis-Konfiguration
+      - "traefik.enable=true"
+      - "traefik.docker.network=proxy"
+      
+      # HTTP Router (redirects to HTTPS)
+      - "traefik.http.routers.arc-raiders-salvage-http.entrypoints=web"
+      - "traefik.http.routers.arc-raiders-salvage-http.rule=Host(`arcs.fr4iser.com`)"
+      - "traefik.http.routers.arc-raiders-salvage-http.middlewares=redirect-to-https"
+      
+      # HTTPS Router
+      - "traefik.http.routers.arc-raiders-salvage.entrypoints=websecure"
+      - "traefik.http.routers.arc-raiders-salvage.rule=Host(`arcs.fr4iser.com`)"
+      - "traefik.http.routers.arc-raiders-salvage.tls=true"
+      - "traefik.http.routers.arc-raiders-salvage.tls.certresolver=http_resolver"
+      - "traefik.http.routers.arc-raiders-salvage.middlewares=arc-raiders-salvage-rate-limit"
+      
+      # Middleware für HTTP zu HTTPS Redirect
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true"
+      
+      # Rate Limiting Middleware
+      - "traefik.http.middlewares.arc-raiders-salvage-rate-limit.ratelimit.burst=20"
+      - "traefik.http.middlewares.arc-raiders-salvage-rate-limit.ratelimit.average=10"
+      
+      # Service Konfiguration
+      - "traefik.http.services.arc-raiders-salvage.loadbalancer.server.port=80"
+
+networks:
+  proxy:
+    external: true

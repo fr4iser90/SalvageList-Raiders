@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import type { Item, MaterialQuantity } from './types';
 import MaterialSelector from './components/MaterialSelector';
 import ItemResultCard from './components/ItemResultCard';
+import { t } from './i18n';
+import { translateMaterialName } from './translations';
 
 const STORAGE_KEY = 'arc-raiders-needed-materials';
 
@@ -45,12 +47,10 @@ function getAllMaterials(items: Item[]): string[] {
 function findItemsProducingMaterial(items: Item[], material: string): Array<{
   item: Item;
   materialQuantity: number;
-  itemsNeeded: number;
 }> {
   const results: Array<{
     item: Item;
     materialQuantity: number;
-    itemsNeeded: number;
   }> = [];
   
   items.forEach(item => {
@@ -62,11 +62,13 @@ function findItemsProducingMaterial(items: Item[], material: string): Array<{
         results.push({
           item,
           materialQuantity: materialMatch.quantity,
-          itemsNeeded: 0, // Will be calculated based on needed quantity
         });
       }
     }
   });
+  
+  // Sort by material quantity (most per item first)
+  results.sort((a, b) => b.materialQuantity - a.materialQuantity);
   
   return results;
 }
@@ -74,9 +76,9 @@ function findItemsProducingMaterial(items: Item[], material: string): Array<{
 function App() {
   const [items, setItems] = useState<Item[]>([]);
   const [selectedMaterial, setSelectedMaterial] = useState<string>('');
-  const [neededQuantity, setNeededQuantity] = useState<number>(1);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [language] = useState<'de' | 'en'>('de'); // Will be configurable later
 
   useEffect(() => {
     setLoading(true);
@@ -86,8 +88,14 @@ function App() {
         return res.json();
       })
       .then(data => {
-        console.log('Items loaded:', data.length);
-        setItems(data);
+        // Validate data structure
+        if (!Array.isArray(data)) {
+          throw new Error('Invalid data format');
+        }
+        // Limit items to prevent memory issues (safety check)
+        const items = data.slice(0, 1000);
+        console.log('Items loaded:', items.length);
+        setItems(items);
         setLoading(false);
       })
       .catch(err => {
@@ -104,7 +112,6 @@ function App() {
       try {
         const data = JSON.parse(saved);
         setSelectedMaterial(data.material || '');
-        setNeededQuantity(data.quantity || 1);
       } catch (e) {
         console.error('Fehler beim Laden aus LocalStorage:', e);
       }
@@ -116,36 +123,19 @@ function App() {
     if (selectedMaterial) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify({
         material: selectedMaterial,
-        quantity: neededQuantity,
       }));
     }
-  }, [selectedMaterial, neededQuantity]);
+  }, [selectedMaterial]);
 
   const allMaterials = getAllMaterials(items);
   const itemsProducingMaterial = selectedMaterial
     ? findItemsProducingMaterial(items, selectedMaterial)
     : [];
 
-  // Calculate how many items are needed for each result
-  const resultsWithCalculation = itemsProducingMaterial.map(result => ({
-    ...result,
-    itemsNeeded: Math.ceil(neededQuantity / result.materialQuantity),
-  }));
-
-  // Sort by efficiency (most material per item first, then by items needed)
-  resultsWithCalculation.sort((a, b) => {
-    // First sort by material quantity per item (descending)
-    if (b.materialQuantity !== a.materialQuantity) {
-      return b.materialQuantity - a.materialQuantity;
-    }
-    // Then by items needed (ascending)
-    return a.itemsNeeded - b.itemsNeeded;
-  });
-
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-900 flex items-center justify-center">
-        <div className="text-white text-xl">Lade Items...</div>
+        <div className="text-white text-xl">{t('loading', language)}</div>
       </div>
     );
   }
@@ -153,7 +143,7 @@ function App() {
   if (error) {
     return (
       <div className="min-h-screen bg-gray-900 flex items-center justify-center">
-        <div className="text-red-500 text-xl">Fehler: {error}</div>
+        <div className="text-red-500 text-xl">{t('error', language, { error })}</div>
       </div>
     );
   }
@@ -162,9 +152,9 @@ function App() {
     <div className="min-h-screen bg-gray-900">
       <header className="bg-gray-800 border-b border-gray-700 sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
-          <h1 className="text-2xl font-bold text-orange-500">🎮 ARC RAIDERS ITEM TRACKER</h1>
+          <h1 className="text-2xl font-bold text-orange-500">{t('title', language)}</h1>
           <div className="mt-2 text-sm text-gray-400">
-            Finde welche Items du recyceln kannst, um benötigte Materialien zu bekommen
+            {t('subtitle', language)}
           </div>
         </div>
       </header>
@@ -174,9 +164,12 @@ function App() {
           <MaterialSelector
             materials={allMaterials}
             selectedMaterial={selectedMaterial}
-            neededQuantity={neededQuantity}
             onMaterialChange={setSelectedMaterial}
-            onQuantityChange={setNeededQuantity}
+            language={language}
+            onLiveSearch={(material) => {
+              // Live Search: Automatisch Material setzen während des Tippens
+              setSelectedMaterial(material);
+            }}
           />
         </div>
       </div>
@@ -185,30 +178,29 @@ function App() {
         {selectedMaterial ? (
           <>
             <h2 className="text-xl font-bold mb-4">
-              Items die <span className="text-orange-500">{selectedMaterial}</span> liefern:
+              {t('itemsProducing', language, { material: translateMaterialName(selectedMaterial, language) })}
             </h2>
-            {resultsWithCalculation.length > 0 ? (
+            {itemsProducingMaterial.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                {resultsWithCalculation.map((result, index) => (
+                {itemsProducingMaterial.map((result, index) => (
                   <ItemResultCard
                     key={`${result.item.name}-${index}`}
                     item={result.item}
                     material={selectedMaterial}
                     materialQuantity={result.materialQuantity}
-                    itemsNeeded={result.itemsNeeded}
-                    totalNeeded={neededQuantity}
+                    language={language}
                   />
                 ))}
               </div>
             ) : (
               <div className="text-center py-12 text-gray-400">
-                Keine Items gefunden die {selectedMaterial} liefern.
+                {t('noItemsFound', language, { material: translateMaterialName(selectedMaterial, language) })}
               </div>
             )}
           </>
         ) : (
           <div className="text-center py-12 text-gray-400">
-            Wähle ein Material aus, um zu sehen welche Items es liefern.
+            {t('selectMaterial', language)}
           </div>
         )}
       </main>
