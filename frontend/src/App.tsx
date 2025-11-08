@@ -7,20 +7,26 @@ import { translateMaterialName } from './translations';
 
 const STORAGE_KEY = 'arc-raiders-needed-materials';
 
-// Parse recycle string like "1x Wires, 2x Metal Parts" into MaterialQuantity[]
+// Parse recycle string like "1x Wires, 2x Metal Parts" or "5x Chemicals 2x Oil" into MaterialQuantity[]
+// Handles both comma-separated and space-separated formats
 function parseRecycleString(recycleStr: string): MaterialQuantity[] {
   if (recycleStr === 'Cannot be recycled' || !recycleStr) {
     return [];
   }
   
   const materials: MaterialQuantity[] = [];
-  const parts = recycleStr.split(',').map(s => s.trim());
   
-  for (const part of parts) {
-    const match = part.match(/^(\d+)x\s+(.+)$/);
-    if (match) {
+  // Use regex to find all "Nx Material" patterns, even when commas are missing
+  // Pattern: (\d+)x\s+ followed by material name (until next \d+x or end of string)
+  const pattern = /(\d+)x\s+([^,\d]+?)(?=\s*\d+x\s+|,|$)/g;
+  let match;
+  
+  while ((match = pattern.exec(recycleStr)) !== null) {
+    const material = match[2].trim();
+    // Only add if material name is not empty
+    if (material) {
       materials.push({
-        material: match[2].trim(),
+        material: material,
         quantity: parseInt(match[1], 10),
       });
     }
@@ -78,7 +84,21 @@ function App() {
   const [selectedMaterial, setSelectedMaterial] = useState<string>('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [language] = useState<'de' | 'en'>('de'); // Will be configurable later
+  
+  // Language selection with auto-detection and localStorage persistence
+  const [language, setLanguage] = useState<'de' | 'en'>(() => {
+    // Try to load from localStorage
+    const saved = localStorage.getItem('arc-raiders-language');
+    if (saved === 'de' || saved === 'en') {
+      return saved;
+    }
+    // Auto-detect from browser language
+    const browserLang = navigator.language.toLowerCase();
+    if (browserLang.startsWith('de')) {
+      return 'de';
+    }
+    return 'en';
+  });
 
   useEffect(() => {
     setLoading(true);
@@ -127,6 +147,11 @@ function App() {
     }
   }, [selectedMaterial]);
 
+  // Save language selection
+  useEffect(() => {
+    localStorage.setItem('arc-raiders-language', language);
+  }, [language]);
+
   const allMaterials = getAllMaterials(items);
   const itemsProducingMaterial = selectedMaterial
     ? findItemsProducingMaterial(items, selectedMaterial)
@@ -152,9 +177,38 @@ function App() {
     <div className="min-h-screen bg-gray-900">
       <header className="bg-gray-800 border-b border-gray-700 sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
-          <h1 className="text-2xl font-bold text-orange-500">{t('title', language)}</h1>
-          <div className="mt-2 text-sm text-gray-400">
-            {t('subtitle', language)}
+          <div className="flex justify-between items-center">
+            <div>
+              <h1 className="text-2xl font-bold text-orange-500">{t('title', language)}</h1>
+              <div className="mt-2 text-sm text-gray-400">
+                {t('subtitle', language)}
+              </div>
+            </div>
+            {/* Language selector */}
+            <div className="flex gap-2">
+              <button
+                onClick={() => setLanguage('de')}
+                className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
+                  language === 'de'
+                    ? 'bg-orange-500 text-white'
+                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                }`}
+                title="Deutsch"
+              >
+                DE
+              </button>
+              <button
+                onClick={() => setLanguage('en')}
+                className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
+                  language === 'en'
+                    ? 'bg-orange-500 text-white'
+                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                }`}
+                title="English"
+              >
+                EN
+              </button>
+            </div>
           </div>
         </div>
       </header>
