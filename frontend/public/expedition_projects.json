@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Foundation (1/6)",
+    "description": "Building the base structure and frame of the caravan",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 150
+      },
+      {
+        "material": "Rubber Parts",
+        "quantity": 200
+      },
+      {
+        "material": "ARC Alloy",
+        "quantity": 80
+      },
+      {
+        "material": "Steel Spring",
+        "quantity": 15
+      }
+    ]
+  },
+  {
+    "name": "Core Systems (2/6)",
+    "description": "Connecting wiring, ventilation, and essential power systems",
+    "required_materials": [
+      {
+        "material": "Durable Cloth",
+        "quantity": 35
+      },
+      {
+        "material": "Wires",
+        "quantity": 30
+      },
+      {
+        "material": "Electrical Components",
+        "quantity": 30
+      },
+      {
+        "material": "Cooling Fan",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "name": "Framework (3/6)",
+    "description": "Building walls and roof, installing core systems, and defining the interior layout",
+    "required_materials": [
+      {
+        "material": "Lightbulb",
+        "quantity": 5
+      },
+      {
+        "material": "Battery",
+        "quantity": 30
+      },
+      {
+        "material": "Sensors",
+        "quantity": 20
+      },
+      {
+        "material": "Exodus Modules",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Outfitting (4/6)",
+    "description": "Adding storage, workbenches, utilities, and personal touches",
+    "required_materials": [
+      {
+        "material": "Humidifier",
+        "quantity": 5
+      },
+      {
+        "material": "Advanced Electrical Components",
+        "quantity": 5
+      },
+      {
+        "material": "Magnetic Accelerators",
+        "quantity": 3
+      },
+      {
+        "material": "Leaper Pulse Units",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "name": "Load Stage (5/6)",
+    "description": "Loading the caravan with vital supplies. Combat gear, survival equipment, provisions, and repair materials are needed to fully prepare for the Expedition",
+    "required_materials": []
+  },
+  {
+    "name": "Departure (6/6)",
+    "description": "Your caravan is stocked with the necessities and ready to depart on your Expedition. Once the departure window opens, you can choose to send your Raider beyond the borders of the Rust Belt forever. All items remaining in your Raider's stash will be contributed to the Expedition, and your next Raider can earn up to  five skill points based on the total value of those items.",
+    "required_materials": []
+  }
+]

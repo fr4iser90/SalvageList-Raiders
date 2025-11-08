@@ -1,0 +1,478 @@
+{
+  "stations": {
+    "Workbench": [
+      {
+        "level": "Level 1",
+        "required_resources": [],
+        "crafts": [
+          "Looting Mk. 1",
+          "Light Shield",
+          "Ferro",
+          "Hairpin",
+          "Kettle",
+          "Stitcher",
+          "Heavy Ammo",
+          "Light Ammo",
+          "Medium Ammo",
+          "Shotgun Ammo",
+          "Shield Recharger",
+          "Bandage",
+          "Light Impact Grenade"
+        ]
+      }
+    ],
+    "Gunsmith": [
+      {
+        "level": "Level 1",
+        "required_resources": [
+          {
+            "material": "Metal Parts",
+            "quantity": 20
+          },
+          {
+            "material": "Rubber Parts",
+            "quantity": 30
+          }
+        ],
+        "crafts": [
+          "Ferro I",
+          "Hairpin I",
+          "Kettle I",
+          "Rattler I",
+          "Sticher I",
+          "Angled Grip I",
+          "Compensator I",
+          "Extended Light Mag I",
+          "Extended Medium MagI",
+          "Extended Shotgun Mag I",
+          "Muzzle Brake I",
+          "Shotgun Choke I",
+          "Stable Stock I",
+          "Vertical Grip I"
+        ]
+      },
+      {
+        "level": "Level 2",
+        "required_resources": [
+          {
+            "material": "Rusted Tools",
+            "quantity": 3
+          },
+          {
+            "material": "Mechanical Components",
+            "quantity": 5
+          },
+          {
+            "material": "Wasp Driver",
+            "quantity": 8
+          }
+        ],
+        "crafts": [
+          "Arpeggio I"
+        ]
+      },
+      {
+        "level": "Level 3",
+        "required_resources": [
+          {
+            "material": "Rusted Gear",
+            "quantity": 3
+          },
+          {
+            "material": "Advanced Mechanical Components",
+            "quantity": 5
+          },
+          {
+            "material": "Sentinel Firing Core",
+            "quantity": 4
+          }
+        ],
+        "crafts": [
+          "Renegade I"
+        ]
+      }
+    ],
+    "Gear Bench": [
+      {
+        "level": "Level 1",
+        "required_resources": [
+          {
+            "material": "Plastic Parts",
+            "quantity": 25
+          },
+          {
+            "material": "Fabric",
+            "quantity": 30
+          }
+        ],
+        "crafts": [
+          "Light Shield",
+          "Medium Shield",
+          "Combat Mk. 1",
+          "Looting Mk. 1",
+          "Tactical Mk. 1"
+        ]
+      },
+      {
+        "level": "Level 2",
+        "required_resources": [
+          {
+            "material": "Power Cable",
+            "quantity": 3
+          },
+          {
+            "material": "Electrical Components",
+            "quantity": 5
+          },
+          {
+            "material": "Hornet Driver",
+            "quantity": 5
+          }
+        ],
+        "crafts": [
+          "Heavy Shield",
+          "Combat Mk. 2",
+          "Looting Mk. 2",
+          "Tactical Mk. 2"
+        ]
+      },
+      {
+        "level": "Level 3",
+        "required_resources": [
+          {
+            "material": "Industrial Battery",
+            "quantity": 3
+          },
+          {
+            "material": "Advanced Electrical Components",
+            "quantity": 5
+          },
+          {
+            "material": "Bastion Cell",
+            "quantity": 6
+          }
+        ],
+        "crafts": [
+          "Looting Mk. 3 (Cautious)",
+          "Tactical Mk.3 (Defensive)"
+        ]
+      }
+    ],
+    "Explosives Station": [
+      {
+        "level": "Level 1",
+        "required_resources": [
+          {
+            "material": "Chemicals",
+            "quantity": 50
+          },
+          {
+            "material": "ARC Alloy",
+            "quantity": 6
+          }
+        ],
+        "crafts": [
+          "Gas Grenade",
+          "Light Impact Grenade"
+        ]
+      },
+      {
+        "level": "Level 2",
+        "required_resources": [
+          {
+            "material": "Synthesized Fuel",
+            "quantity": 3
+          },
+          {
+            "material": "Crude Explosives",
+            "quantity": 5
+          },
+          {
+            "material": "Pop Trigger",
+            "quantity": 5
+          }
+        ],
+        "crafts": [
+          "Blaze Grenade"
+        ]
+      },
+      {
+        "level": "Level 3",
+        "required_resources": [
+          {
+            "material": "Laboratory Reagents",
+            "quantity": 3
+          },
+          {
+            "material": "Explosive Compound",
+            "quantity": 5
+          },
+          {
+            "material": "Rocketeer Driver",
+            "quantity": 3
+          }
+        ],
+        "crafts": [
+          "Heavy Fuze Grenade"
+        ]
+      }
+    ],
+    "Medical Lab": [
+      {
+        "level": "Level 1",
+        "required_resources": [
+          {
+            "material": "Fabric",
+            "quantity": 50
+          },
+          {
+            "material": "ARC Alloy",
+            "quantity": 6
+          }
+        ],
+        "crafts": [
+          "Herbal Bandage",
+          "Shield Recharger",
+          "Adrenaline Shot",
+          "Bandage"
+        ]
+      },
+      {
+        "level": "Level 2",
+        "required_resources": [
+          {
+            "material": "Cracked Bioscanner",
+            "quantity": 2
+          },
+          {
+            "material": "Durable Cloth",
+            "quantity": 5
+          },
+          {
+            "material": "Tick Pod",
+            "quantity": 8
+          }
+        ],
+        "crafts": [
+          "Steralized Bandage",
+          "Surge Shield Recharger"
+        ]
+      },
+      {
+        "level": "Level 3",
+        "required_resources": [
+          {
+            "material": "Rusted Shut Medical Kit",
+            "quantity": 3
+          },
+          {
+            "material": "Antiseptic",
+            "quantity": 8
+          },
+          {
+            "material": "Surveyor Vault",
+            "quantity": 5
+          }
+        ],
+        "crafts": []
+      }
+    ],
+    "Utility Station": [
+      {
+        "level": "Level 1",
+        "required_resources": [
+          {
+            "material": "Plastic Parts",
+            "quantity": 50
+          },
+          {
+            "material": "ARC Alloy",
+            "quantity": 6
+          }
+        ],
+        "crafts": [
+          "Binoculars",
+          "Li'l Smoke Greade",
+          "Door Blocker"
+        ]
+      },
+      {
+        "level": "Level 2",
+        "required_resources": [
+          {
+            "material": "Damaged Heat Sink",
+            "quantity": 2
+          },
+          {
+            "material": "Electrical Components",
+            "quantity": 5
+          },
+          {
+            "material": "Snitch Scanner",
+            "quantity": 6
+          }
+        ],
+        "crafts": [
+          "Raider Hatch Key",
+          "Zipline"
+        ]
+      },
+      {
+        "level": "Level 3",
+        "required_resources": [
+          {
+            "material": "Fried Motherboard",
+            "quantity": 3
+          },
+          {
+            "material": "Advanced Electrical Components",
+            "quantity": 5
+          },
+          {
+            "material": "Leaper Pulse Unit",
+            "quantity": 4
+          }
+        ],
+        "crafts": [
+          "Photoelectric Cloak"
+        ]
+      }
+    ],
+    "Refiner": [
+      {
+        "level": "Level 1",
+        "required_resources": [
+          {
+            "material": "Metal Parts",
+            "quantity": 60
+          },
+          {
+            "material": "ARC Powercell",
+            "quantity": 5
+          }
+        ],
+        "crafts": [
+          "Electrical Components",
+          "Crude Explosives",
+          "Mechanical Components"
+        ]
+      },
+      {
+        "level": "Level 2",
+        "required_resources": [
+          {
+            "material": "Toaster",
+            "quantity": 3
+          },
+          {
+            "material": "ARC Motion Core",
+            "quantity": 5
+          },
+          {
+            "material": "Fireball Burner",
+            "quantity": 8
+          }
+        ],
+        "crafts": [
+          "Advanced Electrical Components",
+          "Advanced Mechanical Components",
+          "Antiseptic",
+          "ARC Circuitry",
+          "ARC Motion Core",
+          "Heavy Gun Parts",
+          "Light Gun Parts",
+          "Medium Gun Parts"
+        ]
+      },
+      {
+        "level": "Level 3",
+        "required_resources": [
+          {
+            "material": "Motor",
+            "quantity": 3
+          },
+          {
+            "material": "ARC Circuitry",
+            "quantity": 10
+          },
+          {
+            "material": "Bombardier Cell",
+            "quantity": 6
+          }
+        ],
+        "crafts": [
+          "Magnetic Accelerator",
+          "Mod Components",
+          "Power Rod"
+        ]
+      }
+    ],
+    "Scrappy the Rooster": [
+      {
+        "level": "Level 1 - Fledgling",
+        "required_resources": [],
+        "crafts": []
+      },
+      {
+        "level": "Level 2 - Forager",
+        "required_resources": [
+          {
+            "material": "Dog Collar",
+            "quantity": 1
+          }
+        ],
+        "crafts": []
+      },
+      {
+        "level": "Level 3 - Savenger",
+        "required_resources": [
+          {
+            "material": "Lemon",
+            "quantity": 5
+          },
+          {
+            "material": "Apricot",
+            "quantity": 5
+          }
+        ],
+        "crafts": []
+      },
+      {
+        "level": "Level 4 - Treasure Hunter",
+        "required_resources": [
+          {
+            "material": "Prickly Pear",
+            "quantity": 8
+          },
+          {
+            "material": "Olives",
+            "quantity": 8
+          },
+          {
+            "material": "Cat Bed",
+            "quantity": 1
+          }
+        ],
+        "crafts": []
+      },
+      {
+        "level": "Level 5 - Master Hoarder",
+        "required_resources": [
+          {
+            "material": "Apricot",
+            "quantity": 12
+          },
+          {
+            "material": "Mushroom",
+            "quantity": 12
+          },
+          {
+            "material": "Very Comfortable Pillow",
+            "quantity": 3
+          }
+        ],
+        "crafts": []
+      }
+    ]
+  }
+}

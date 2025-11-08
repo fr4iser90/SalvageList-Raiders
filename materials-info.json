@@ -1,0 +1,785 @@
+[
+  {
+    "material": "Chemicals",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x1",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Fabric",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x1",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Metal Parts",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x1",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Plastic Parts",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x1",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Rubber Parts",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x1",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Battery",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x5",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Canister",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x6",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "DuctTape",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x6",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Great Mullein",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x5",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Magnet",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x6",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Oil",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x6",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Simple Gun Parts",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x7",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Steel Spring",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x6",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Wires",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x4",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Heavy Gun Parts",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x15",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Light Gun Parts",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x15",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Medium Gun Parts",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x15",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Moss",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x10",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Processor",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x10",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Rope",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x10",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Sensors",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x10",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Speaker Component",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x10",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Synthesized Fuel",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x14",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Syringe",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x10",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Voltage Converter",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x10",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Complex Gun Parts",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x60",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Exodus Modules",
+    "trader": {
+      "available": true,
+      "trader_name": "Celeste",
+      "price": "Assorted Seeds x55",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Ferro I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1425",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Hairpin I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1350",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Kettle I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$2520",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Stitcher I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$2400",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Heavy Ammo",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$900",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Medium Ammo",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$900",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Light Ammo",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$900",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Shotgun Ammo",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$900",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Launcher Ammo",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$3000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Hullcracker I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$30000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Renegade I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$21000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Anvil I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$15000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Burletta I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$8700",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "IL Toro I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$15000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Angled Grip III",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$15000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Extended Light Mag II",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$6000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Shotgun Choke II",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$6000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Angled Grip I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Compensator I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Extended Light Mag I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Extended Medium Mag I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Extended Shotgun Mag I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Muzzle Brake I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Shotgun Choke I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Stable Stock I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Vertical Grip I",
+    "trader": {
+      "available": true,
+      "trader_name": "Tian Wen",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Blue Light Stick",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$450",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Green Light Stick",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$450",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Red Light Stick",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$450",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Yellow Light Stick",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$450",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Light Impact Grenade",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$810",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Noisemaker",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Remote Raider Flare",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$810",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Heavy Fuze Grenade",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$4800",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Smoke Grenade",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$3000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Barricade Kit",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Snap Blast Grenade",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$2400",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Gas Grenade",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$810",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Jolt Mine",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$2550",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Zipline",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$3000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Door Blocker",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$810",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Recorder",
+    "trader": {
+      "available": true,
+      "trader_name": "Apollo",
+      "price": "$3000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Binoculars",
+    "trader": {
+      "available": true,
+      "trader_name": "Shani",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Raider Hatch Key",
+    "trader": {
+      "available": true,
+      "trader_name": "Shani",
+      "price": "$9000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Combat MK.1",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "Free Loadout Augment or $1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Looting MK.1",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "Free Loadout Augment or $1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Tactical MK.1",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "Free Loadout Augment or $1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Light Shield",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$1920",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Defibrillator",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$3000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Shield Recharger",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$1560",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Adrenaline Shot",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$900",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Bandage",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$750",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Combat MK.2",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$6000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Looting MK.2",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$6000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Tactical MK.2",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$6000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Medium Shield",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$6000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Sterilized Bandage",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$6000",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Surge Shield Recharger",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$3600",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Herbal Bandage",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$2700",
+      "frequency": "Daily"
+    }
+  },
+  {
+    "material": "Heavy Shield",
+    "trader": {
+      "available": true,
+      "trader_name": "Lance",
+      "price": "$16500",
+      "frequency": "Daily"
+    }
+  }
+]
