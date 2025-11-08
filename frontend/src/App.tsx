@@ -174,7 +174,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-gray-900 flex flex-col">
       <header className="bg-gray-800 border-b border-gray-700 sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
@@ -228,7 +228,7 @@ function App() {
         </div>
       </div>
 
-      <main className="container mx-auto px-4 py-6">
+      <main className="container mx-auto px-4 py-6 flex-1">
         {selectedMaterial ? (
           <>
             <h2 className="text-xl font-bold mb-4">
@@ -258,6 +258,42 @@ function App() {
           </div>
         )}
       </main>
+
+      <footer className="bg-gray-800 border-t border-gray-700 mt-auto">
+        <div className="container mx-auto px-4 py-8">
+          <div className="text-center">
+            <h3 className="text-lg font-semibold text-orange-500 mb-2">
+              {t('supportTitle', language)}
+            </h3>
+            <p className="text-gray-400 text-sm mb-6">
+              {t('supportDescription', language)}
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="https://coff.ee/fr4iser"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-[#FFDD00] text-black rounded-lg font-medium hover:bg-[#FFE44D] transition-colors"
+              >
+                <span>☕</span>
+                Buy me a coffee
+              </a>
+              <a
+                href="https://www.paypal.me/SupportMySnacks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+              >
+                <span>💳</span>
+                Donate with PayPal
+              </a>
+            </div>
+            <p className="text-gray-500 text-xs mt-4">
+              {t('supportHelpText', language)}
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

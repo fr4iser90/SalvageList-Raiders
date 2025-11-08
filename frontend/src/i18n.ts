@@ -13,6 +13,9 @@ export const translations = {
     recyclesTo: 'Recycelt zu:',
     sell: 'Verkauf:',
     perItem: '{quantity}x {material} pro Item',
+    supportTitle: 'Projekt unterstützen',
+    supportDescription: 'Wenn dir dieses Projekt gefällt, erwäge bitte die Entwicklung zu unterstützen:',
+    supportHelpText: 'Deine Unterstützung hilft, die Entwicklungskosten zu decken und das Projekt aktiv zu pflegen.',
   },
   en: {
     title: 'ARC RAIDERS ITEM TRACKER',
@@ -27,6 +30,9 @@ export const translations = {
     recyclesTo: 'Recycles to:',
     sell: 'Sell:',
     perItem: '{quantity}x {material} per item',
+    supportTitle: 'Support the Project',
+    supportDescription: 'If you find this project useful, please consider supporting its development:',
+    supportHelpText: 'Your support helps cover development costs and keeps the project actively maintained.',
   },
 };
 

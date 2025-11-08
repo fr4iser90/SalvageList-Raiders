@@ -13,11 +13,15 @@ A web application to help ARC Raiders players find which items they can recycle 
 
 ## Live Demo
 
-[Visit the live site](https://arcs.fr4iser.com) (if deployed)
+🌐 **[Visit the live site](https://arcs.fr4iser.com/)**
+
+The application is live and ready to use!
 
 ## Screenshots
 
-*Add screenshots here if you have them*
+![ARC Raiders Item Tracker](example.png)
+
+*Screenshot showing the application interface with material search and item results*
 
 ## Getting Started
 
@@ -30,7 +34,7 @@ A web application to help ARC Raiders players find which items they can recycle 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/SalvageList-Raiders.git
+   git clone https://github.com/fr4iser90/SalvageList-Raiders.git
    cd SalvageList-Raiders
    ```
 
