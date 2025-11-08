@@ -1,49 +1,140 @@
-# Übersetzungsanleitung für Arc Raiders Items
+# Translation Guide
 
-## Wo finde ich die deutschen Übersetzungen?
+## 🌍 Adding a New Language
 
-### 1. **Im Spiel selbst** (Beste Quelle!)
-   - Starte Arc Raiders auf Deutsch
-   - Gehe ins Inventar/Menü
-   - Notiere die deutschen Namen der Items und Materialien
-   - Screenshots machen hilft!
+### Step 1: Create a New Translation File
 
-### 2. **Steam Community Guides**
-   - Suche nach "Arc Raiders German Items" oder ähnlich
-   - Community-Mitglieder haben manchmal Übersetzungslisten erstellt
+1. Copy `frontend/src/translations/TEMPLATE.ts` to `frontend/src/translations/[language-code].ts`
+   - Example: `frontend/src/translations/fr.ts` for French
+   - Example: `frontend/src/translations/es.ts` for Spanish
+   - Example: `frontend/src/translations/it.ts` for Italian
 
-### 3. **Spiel-Datenbanken**
-   - Manche Spiele-Datenbanken haben mehrsprachige Einträge
-   - Prüfe SteamDB oder ähnliche Seiten
+2. Use ISO 639-1 language codes (2 letters)
 
-## Wie trage ich die Übersetzungen ein?
+### Step 2: Fill in Translations
 
-1. Öffne `frontend/src/translations.ts`
-2. Entkommentiere die Zeilen (entferne `//` am Anfang)
-3. Ersetze die Beispiel-Übersetzungen mit den echten deutschen Namen aus dem Spiel
+Open the new file and fill in the translations:
 
-### Beispiel:
 ```typescript
+// French translations example
 export const itemTranslations: Record<string, string> = {
-  "Advanced ARC Powercell": "Fortgeschrittene ARC-Zelle",  // ← Echter Name aus dem Spiel
-  "Wires": "Drähte",  // ← Echter Name aus dem Spiel
-  // ... usw.
+  "Advanced ARC Powercell": "Cellule ARC Avancée",
+  "Wires": "Fils",
+  // ... more translations
+};
+
+export const materialTranslations: Record<string, string> = {
+  "Wires": "Fils",
+  "Metal Parts": "Pièces Métalliques",
+  // ... more translations
+};
+
+export const categoryTranslations: Record<string, string> = {
+  "Misc": "Divers",
+  "Recyclable": "Recyclable",
+  // ... more translations
+};
+
+export const rarityTranslations: Record<string, string> = {
+  "Common": "Commun",
+  "Rare": "Rare",
+  // ... more translations
 };
 ```
 
-## Wichtige Hinweise:
+### Step 3: System Integration
 
-- **Item-Namen**: Die Namen der Items selbst (z.B. "Advanced ARC Powercell")
-- **Material-Namen**: Die Materialien die beim Recyceln rauskommen (z.B. "Wires", "Metal Parts")
-- **Kategorien**: Sind bereits übersetzt (Misc → Verschiedenes, etc.)
-- **Rarity**: Ist bereits übersetzt (Common → Gewöhnlich, etc.)
+1. **Update `frontend/src/translations.ts`:**
+   ```typescript
+   import * as frTranslations from './translations/fr';
+   
+   function getTranslations(lang: 'de' | 'en' | 'fr') {
+     if (lang === 'de') return gerTranslations;
+     if (lang === 'en') return enTranslations;
+     if (lang === 'fr') return frTranslations;
+     return enTranslations; // fallback
+   }
+   ```
 
-## Tipp:
+2. **Update `frontend/src/i18n.ts`:**
+   ```typescript
+   export type Language = 'de' | 'en' | 'fr';
+   
+   export const translations = {
+     de: { ... },
+     en: { ... },
+     fr: {
+       title: 'ARC RAIDERS ITEM TRACKER',
+       subtitle: 'Trouvez quels objets recycler pour obtenir les matériaux nécessaires',
+       // ... more UI translations
+     },
+   };
+   ```
 
-Falls du viele Items hast, kannst du:
-1. Screenshots aus dem Spiel machen
-2. Die Namen in eine Excel/CSV-Datei eintragen
-3. Dann in die `translations.ts` kopieren
+3. **Update `frontend/src/App.tsx`:**
+   - Add a button for the new language in the language selector
 
-Die Struktur ist vorbereitet - du musst nur die Übersetzungen eintragen! 🎮
+## 📝 Improving Existing Translations
+
+### German (ger.ts)
+
+1. Open `frontend/src/translations/ger.ts`
+2. Uncomment the lines (remove `//`)
+3. Replace example translations with actual names from the game
+
+### Example:
+```typescript
+export const itemTranslations: Record<string, string> = {
+  "Advanced ARC Powercell": "Fortgeschrittene ARC-Zelle",  // ← Actual name from game
+  "Wires": "Drähte",  // ← Actual name from game
+};
+```
+
+## 🎮 Where to Find Translations?
+
+### 1. **In the Game Itself** (Best Source!)
+   - Launch ARC Raiders in the desired language
+   - Go to inventory/menu
+   - Note down the names of items and materials
+   - Screenshots help!
+
+### 2. **Steam Community Guides**
+   - Search for "ARC Raiders [Language] Items"
+   - Community members sometimes create translation lists
+
+### 3. **Game Databases**
+   - Some game databases have multilingual entries
+   - Check SteamDB or similar sites
+
+## 📋 What Needs to be Translated?
+
+- **Item Names**: The names of items themselves (e.g., "Advanced ARC Powercell")
+- **Material Names**: Materials obtained from recycling (e.g., "Wires", "Metal Parts")
+- **Categories**: Partially translated (Misc → Verschiedenes, etc.)
+- **Rarity**: Already translated (Common → Gewöhnlich, etc.)
+- **UI Texts**: In `i18n.ts` (title, buttons, etc.)
+
+## 💡 Tips
+
+- If you have many items:
+  1. Take screenshots from the game
+  2. Enter the names into an Excel/CSV file
+  3. Copy them into the translation file
+
+- Test your translations:
+  ```bash
+  npm run dev
+  ```
+  Switch to the language and verify everything displays correctly
+
+## 🤝 Creating a Pull Request
+
+1. Fork the repository
+2. Create a branch: `git checkout -b feature/translation-french`
+3. Make your changes
+4. Commit: `git commit -m "Add French translations"`
+5. Push: `git push origin feature/translation-french`
+6. Create a Pull Request on GitHub
+
+Thank you for your contribution! 🙏
 
