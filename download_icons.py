@@ -50,6 +50,11 @@ def download_image(url, filepath):
             print(f"  ⚠️  Warning: {url} doesn't appear to be an image (Content-Type: {content_type})")
             return False
         
+        # Check file size - if too small, it's probably a placeholder
+        if len(response.content) < 2048:
+            print(f"  ⚠️  Warning: Downloaded image is too small ({len(response.content)} bytes), probably a placeholder")
+            return False
+        
         with open(filepath, 'wb') as f:
             f.write(response.content)
         return True
@@ -224,21 +229,72 @@ def process_items():
         local_path = os.path.join(ICONS_DIR, local_filename)
         relative_path = f"/icons/{local_filename}"
         
-        # If already using local path, skip
+        # If already using local path, check if icon is valid
         if current_image.startswith('/icons/') or current_image.startswith('icons/'):
-            print(f"  ✓ Already using local icon: {current_image}")
-            continue
+            if os.path.exists(local_path):
+                file_size = os.path.getsize(local_path)
+                # If file is very small (< 2KB), it's probably a placeholder - re-download from wiki
+                if file_size < 2048:
+                    print(f"  ⚠️  Icon exists but is too small ({file_size} bytes), searching wiki for correct icon...")
+                    os.remove(local_path)
+                    # Try to find image URL from wiki
+                    image_url = find_wiki_image_url(name, wiki_url)
+                    if image_url:
+                        print(f"  📥 Found image URL: {image_url}")
+                        if download_image(image_url, local_path):
+                            item['image'] = relative_path
+                            downloaded += 1
+                            updated += 1
+                            print(f"  ✅ Saved to {relative_path}")
+                        else:
+                            failed += 1
+                            print(f"  ⚠️  Download failed")
+                    else:
+                        skipped += 1
+                        print(f"  ⚠️  Could not find image URL")
+                    time.sleep(DELAY_BETWEEN_REQUESTS)
+                    continue
+                else:
+                    print(f"  ✓ Icon already exists: {relative_path}")
+                    continue
+            else:
+                print(f"  ⚠️  Icon path in JSON but file missing, searching wiki...")
+                # Try to find image URL from wiki
+                image_url = find_wiki_image_url(name, wiki_url)
+                if image_url:
+                    print(f"  📥 Found image URL: {image_url}")
+                    if download_image(image_url, local_path):
+                        item['image'] = relative_path
+                        downloaded += 1
+                        updated += 1
+                        print(f"  ✅ Saved to {relative_path}")
+                    else:
+                        failed += 1
+                        print(f"  ⚠️  Download failed")
+                else:
+                    skipped += 1
+                    print(f"  ⚠️  Could not find image URL")
+                time.sleep(DELAY_BETWEEN_REQUESTS)
+                continue
         
         # If it's a placeholder, try to find the image from wiki
         if current_image.startswith('data:'):
             print(f"  🔍 Placeholder detected, searching wiki...")
             
-            # Check if already downloaded
+            # Check if already downloaded and valid (not a placeholder)
             if os.path.exists(local_path):
-                print(f"  ✓ Icon already exists: {relative_path}")
-                item['image'] = relative_path
-                updated += 1
-                continue
+                file_size = os.path.getsize(local_path)
+                # If file is very small (< 2KB), it's probably a placeholder - re-download
+                if file_size < 2048:
+                    print(f"  ⚠️  Icon exists but is too small ({file_size} bytes), re-downloading...")
+                    os.remove(local_path)
+                else:
+                    print(f"  ✓ Icon already exists: {relative_path}")
+                    # Update JSON to use local path if not already
+                    if item['image'] != relative_path:
+                        item['image'] = relative_path
+                        updated += 1
+                    continue
             
             # Try to find image URL from wiki
             image_url = find_wiki_image_url(name, wiki_url)
@@ -270,14 +326,20 @@ def process_items():
             local_path = os.path.join(ICONS_DIR, local_filename)
             relative_path = f"/icons/{local_filename}"
             
-            # Check if already downloaded
+            # Check if already downloaded and valid
             if os.path.exists(local_path):
-                print(f"  ✓ Icon already exists: {relative_path}")
-                # Update JSON to use local path if not already
-                if item['image'] != relative_path:
-                    item['image'] = relative_path
-                    updated += 1
-                continue
+                file_size = os.path.getsize(local_path)
+                # If file is very small (< 2KB), it's probably a placeholder - re-download
+                if file_size < 2048:
+                    print(f"  ⚠️  Icon exists but is too small ({file_size} bytes), re-downloading...")
+                    os.remove(local_path)
+                else:
+                    print(f"  ✓ Icon already exists: {relative_path}")
+                    # Update JSON to use local path if not already
+                    if item['image'] != relative_path:
+                        item['image'] = relative_path
+                        updated += 1
+                    continue
             
             # Download the image
             print(f"  📥 Downloading from {current_image}")
