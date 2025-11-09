@@ -50,7 +50,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x5",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 10
     }
   },
   {
@@ -59,7 +60,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x6",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 10
     }
   },
   {
@@ -68,7 +70,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x6",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 10
     }
   },
   {
@@ -77,7 +80,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x5",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 10
     }
   },
   {
@@ -86,7 +90,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x6",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 10
     }
   },
   {
@@ -95,7 +100,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x6",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 10
     }
   },
   {
@@ -104,7 +110,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x7",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 10
     }
   },
   {
@@ -113,7 +120,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x6",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 10
     }
   },
   {
@@ -122,7 +130,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x4",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 10
     }
   },
   {
@@ -131,7 +140,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x15",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 3
     }
   },
   {
@@ -140,7 +150,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x15",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 3
     }
   },
   {
@@ -149,7 +160,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x15",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 3
     }
   },
   {
@@ -158,7 +170,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x10",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 5
     }
   },
   {
@@ -167,7 +180,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x10",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 5
     }
   },
   {
@@ -176,7 +190,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x10",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 5
     }
   },
   {
@@ -185,7 +200,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x10",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 5
     }
   },
   {
@@ -194,7 +210,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x10",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 5
     }
   },
   {
@@ -203,7 +220,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x14",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 5
     }
   },
   {
@@ -212,7 +230,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x10",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 5
     }
   },
   {
@@ -221,7 +240,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x10",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 5
     }
   },
   {
@@ -230,7 +250,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x60",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 1
     }
   },
   {
@@ -239,7 +260,8 @@
       "available": true,
       "trader_name": "Celeste",
       "price": "Assorted Seeds x55",
-      "frequency": "Daily"
+      "frequency": "Daily",
+      "max_buys_per_day": 1
     }
   },
   {
