@@ -1,0 +1,521 @@
+{
+  "Ferro II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Ferro I",
+        "quantity": 1
+      },
+      {
+        "material": "Metal Parts",
+        "quantity": 7
+      }
+    ],
+    "upgrade_from": "Ferro I"
+  },
+  "Ferro III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Ferro II",
+        "quantity": 1
+      },
+      {
+        "material": "Metal Parts",
+        "quantity": 9
+      },
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 1
+      }
+    ],
+    "upgrade_from": "Ferro II"
+  },
+  "Ferro IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Ferro III",
+        "quantity": 1
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 1
+      }
+    ],
+    "upgrade_from": "Ferro III"
+  },
+  "Hairpin II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Hairpin I",
+        "quantity": 1
+      },
+      {
+        "material": "Metal Parts",
+        "quantity": 8
+      }
+    ],
+    "upgrade_from": "Hairpin I"
+  },
+  "Hairpin III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Hairpin II",
+        "quantity": 1
+      },
+      {
+        "material": "Metal Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 1
+      }
+    ],
+    "upgrade_from": "Hairpin II"
+  },
+  "Hairpin IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Hairpin III",
+        "quantity": 1
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 1
+      }
+    ],
+    "upgrade_from": "Hairpin III"
+  },
+  "Kettle II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Kettle I",
+        "quantity": 1
+      },
+      {
+        "material": "Metal Parts",
+        "quantity": 8
+      },
+      {
+        "material": "Plastic Parts",
+        "quantity": 10
+      }
+    ],
+    "upgrade_from": "Kettle I"
+  },
+  "Kettle III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Kettle II",
+        "quantity": 1
+      },
+      {
+        "material": "Metal Parts",
+        "quantity": 10
+      },
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 1
+      }
+    ],
+    "upgrade_from": "Kettle II"
+  },
+  "Kettle IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Kettle III",
+        "quantity": 1
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 3
+      },
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 1
+      }
+    ],
+    "upgrade_from": "Kettle III"
+  },
+  "Rattler II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Rattler I",
+        "quantity": 1
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 2
+      }
+    ],
+    "upgrade_from": "Rattler I"
+  },
+  "Rattler III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Rattler II",
+        "quantity": 1
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 2
+      },
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 1
+      }
+    ],
+    "upgrade_from": "Rattler II"
+  },
+  "Rattler IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Rattler III",
+        "quantity": 1
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 3
+      },
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 1
+      }
+    ],
+    "upgrade_from": "Rattler III"
+  },
+  "Sticher II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Sticher III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Sticher IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Angled Grip II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Mechanical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Duct Tape",
+        "quantity": 1
+      }
+    ]
+  },
+  "Angled Grip III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Angled Grip IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Compensator II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Mechanical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Wires",
+        "quantity": 1
+      }
+    ]
+  },
+  "Compensator III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Compensator IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Extended Light Mag II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Extended Light Mag III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Extended Light Mag IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Extended Shotgun Mag II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Extended Shotgun Mag III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Extended Shotgun Mag IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Muzzle Brake II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Mechanical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Wires",
+        "quantity": 1
+      }
+    ]
+  },
+  "Muzzle Brake III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Muzzle Brake IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Shotgun Choke II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Mechanical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Wires",
+        "quantity": 1
+      }
+    ]
+  },
+  "Shotgun Choke III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Shotgun Choke IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Stable Stock II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Mechanical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Duct Tape",
+        "quantity": 1
+      }
+    ]
+  },
+  "Stable Stock III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Stable Stock IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Vertical Grip II": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Vertical Grip III": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Mod Components",
+        "quantity": 2
+      },
+      {
+        "material": "Duct Tape",
+        "quantity": 5
+      }
+    ]
+  },
+  "Vertical Grip IV": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Arpeggio II": {
+    "station": "Gunsmith",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Arpeggio I",
+        "quantity": 1
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 4
+      },
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 1
+      }
+    ],
+    "upgrade_from": "Arpeggio I"
+  },
+  "Arpeggio III": {
+    "station": "Gunsmith",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Arpeggio II",
+        "quantity": 1
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 5
+      },
+      {
+        "material": "Medium Gun Parts",
+        "quantity": 1
+      }
+    ],
+    "upgrade_from": "Arpeggio II"
+  },
+  "Arpeggio IV": {
+    "station": "Gunsmith",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Arpeggio III",
+        "quantity": 1
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Medium Gun Parts",
+        "quantity": 2
+      }
+    ],
+    "upgrade_from": "Arpeggio III"
+  },
+  "Renegade II": {
+    "station": "Gunsmith",
+    "level": "Level 3",
+    "required_materials": [
+      {
+        "material": "Renegade I",
+        "quantity": 1
+      },
+      {
+        "material": "Advanced Mechanical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Medium Gun Parts",
+        "quantity": 2
+      }
+    ],
+    "upgrade_from": "Renegade I"
+  },
+  "Renegade III": {
+    "station": "Gunsmith",
+    "level": "Level 3",
+    "required_materials": [
+      {
+        "material": "Renegade II",
+        "quantity": 1
+      },
+      {
+        "material": "Advanced Mechanical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Medium Gun Parts",
+        "quantity": 2
+      }
+    ],
+    "upgrade_from": "Renegade II"
+  },
+  "Renegade IV": {
+    "station": "Gunsmith",
+    "level": "Level 3",
+    "required_materials": [
+      {
+        "material": "Renegade III",
+        "quantity": 1
+      },
+      {
+        "material": "Advanced Mechanical Components",
+        "quantity": 2
+      },
+      {
+        "material": "Medium Gun Parts",
+        "quantity": 2
+      }
+    ],
+    "upgrade_from": "Renegade III"
+  }
+}

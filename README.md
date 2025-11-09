@@ -19,7 +19,7 @@ The application is live and ready to use!
 
 ## Screenshots
 
-![ARC Raiders Item Tracker](example.png)
+![ARC Raiders Item Tracker](docs/example.png)
 
 *Screenshot showing the application interface with material search and item results*
 
@@ -78,14 +78,14 @@ See [DOCKER.md](./DOCKER.md) for more detailed Docker deployment instructions.
 
 We welcome contributions! Especially translations for new languages.
 
-- **Adding Translations**: See [TRANSLATION_GUIDE.md](./TRANSLATION_GUIDE.md)
-- **General Contributing**: See [CONTRIBUTING.md](./CONTRIBUTING.md)
+- **Adding Translations**: See [TRANSLATION_GUIDE.md](./docs/TRANSLATION_GUIDE.md)
+- **General Contributing**: See [CONTRIBUTING.md](./docs/CONTRIBUTING.md)
 
 ### Quick Translation Guide
 
 1. Copy `frontend/src/translations/TEMPLATE.ts` to `frontend/src/translations/[language-code].ts`
 2. Fill in the translations
-3. Update the system files (see TRANSLATION_GUIDE.md for details)
+3. Update the system files (see [docs/TRANSLATION_GUIDE.md](./docs/TRANSLATION_GUIDE.md) for details)
 4. Submit a Pull Request
 
 ## Tech Stack
@@ -131,7 +131,7 @@ Item data is sourced from the [ARC Raiders Wiki](https://arc-raiders.fandom.com/
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/yourusername/SalvageList-Raiders/issues)
-- **Translations**: See [TRANSLATION_GUIDE.md](./TRANSLATION_GUIDE.md)
+- **Translations**: See [docs/TRANSLATION_GUIDE.md](./docs/TRANSLATION_GUIDE.md)
 
 ---
 

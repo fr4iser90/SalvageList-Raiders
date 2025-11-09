@@ -1,0 +1,798 @@
+{
+  "Looting Mk. 1": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Rubber Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Plastic Parts",
+        "quantity": 6
+      }
+    ]
+  },
+  "Light Shield": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "ARC Alloy",
+        "quantity": 2
+      },
+      {
+        "material": "Plastic Parts",
+        "quantity": 4
+      }
+    ]
+  },
+  "Ferro": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Hairpin": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Kettle": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Stitcher": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 8
+      },
+      {
+        "material": "Rubber Parts",
+        "quantity": 4
+      }
+    ]
+  },
+  "Heavy Ammo": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 3
+      },
+      {
+        "material": "Chemicals",
+        "quantity": 2
+      }
+    ]
+  },
+  "Light Ammo": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 3
+      },
+      {
+        "material": "Chemicals",
+        "quantity": 2
+      }
+    ]
+  },
+  "Medium Ammo": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 3
+      },
+      {
+        "material": "Chemicals",
+        "quantity": 2
+      }
+    ]
+  },
+  "Shotgun Ammo": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 3
+      },
+      {
+        "material": "Chemicals",
+        "quantity": 2
+      }
+    ]
+  },
+  "Shield Recharger": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Rubber Parts",
+        "quantity": 5
+      },
+      {
+        "material": "ARC Powercell",
+        "quantity": 1
+      }
+    ]
+  },
+  "Bandage": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Fabric",
+        "quantity": 5
+      }
+    ]
+  },
+  "Light Impact Grenade": {
+    "station": "Workbench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Plastic Parts",
+        "quantity": 1
+      },
+      {
+        "material": "Chemicals",
+        "quantity": 3
+      }
+    ]
+  },
+  "Ferro I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 5
+      },
+      {
+        "material": "Rubber Parts",
+        "quantity": 2
+      }
+    ]
+  },
+  "Hairpin I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 2
+      },
+      {
+        "material": "Plastic Parts",
+        "quantity": 5
+      }
+    ]
+  },
+  "Kettle I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Rubber Parts",
+        "quantity": 8
+      }
+    ]
+  },
+  "Rattler I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 16
+      },
+      {
+        "material": "Rubber Parts",
+        "quantity": 12
+      }
+    ]
+  },
+  "Sticher I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Angled Grip I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Plastic Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Duct Tape",
+        "quantity": 1
+      }
+    ]
+  },
+  "Compensator I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Extended Light Mag I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Plastic Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Steel Spring",
+        "quantity": 1
+      }
+    ]
+  },
+  "Extended Medium MagI": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Extended Shotgun Mag I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Plastic Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Steel Spring",
+        "quantity": 1
+      }
+    ]
+  },
+  "Muzzle Brake I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Wires",
+        "quantity": 1
+      }
+    ]
+  },
+  "Shotgun Choke I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Wires",
+        "quantity": 1
+      }
+    ]
+  },
+  "Stable Stock I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Rubber Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Duct Tape",
+        "quantity": 1
+      }
+    ]
+  },
+  "Vertical Grip I": {
+    "station": "Gunsmith",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Plastic Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Duct Tape",
+        "quantity": 1
+      }
+    ]
+  },
+  "Arpeggio I": {
+    "station": "Gunsmith",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Mechanical Components",
+        "quantity": 6
+      },
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 6
+      }
+    ]
+  },
+  "Renegade I": {
+    "station": "Gunsmith",
+    "level": "Level 3",
+    "required_materials": [
+      {
+        "material": "Advanced Mechanical Components",
+        "quantity": 2
+      },
+      {
+        "material": "Medium Gun Parts",
+        "quantity": 3
+      },
+      {
+        "material": "Oil",
+        "quantity": 5
+      }
+    ]
+  },
+  "Medium Shield": {
+    "station": "Gear Bench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Battery",
+        "quantity": 4
+      },
+      {
+        "material": "ARC Circuitry",
+        "quantity": 1
+      }
+    ]
+  },
+  "Combat Mk. 1": {
+    "station": "Gear Bench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Rubber Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Plastic Parts",
+        "quantity": 6
+      }
+    ]
+  },
+  "Tactical Mk. 1": {
+    "station": "Gear Bench",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Rubber Parts",
+        "quantity": 6
+      },
+      {
+        "material": "Plastic Parts",
+        "quantity": 6
+      }
+    ]
+  },
+  "Heavy Shield": {
+    "station": "Gear Bench",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Power Rod",
+        "quantity": 1
+      },
+      {
+        "material": "Voltage Converter",
+        "quantity": 2
+      }
+    ]
+  },
+  "Combat Mk. 2": {
+    "station": "Gear Bench",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Electrical Components",
+        "quantity": 2
+      },
+      {
+        "material": "Magnet",
+        "quantity": 3
+      }
+    ]
+  },
+  "Looting Mk. 2": {
+    "station": "Gear Bench",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Electrical Components",
+        "quantity": 2
+      },
+      {
+        "material": "Magnet",
+        "quantity": 3
+      }
+    ]
+  },
+  "Tactical Mk. 2": {
+    "station": "Gear Bench",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Electrical Components",
+        "quantity": 2
+      },
+      {
+        "material": "Magnet",
+        "quantity": 3
+      }
+    ]
+  },
+  "Looting Mk. 3 (Cautious)": {
+    "station": "Gear Bench",
+    "level": "Level 3",
+    "required_materials": []
+  },
+  "Tactical Mk.3 (Defensive)": {
+    "station": "Gear Bench",
+    "level": "Level 3",
+    "required_materials": []
+  },
+  "Gas Grenade": {
+    "station": "Explosives Station",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Chemicals",
+        "quantity": 4
+      },
+      {
+        "material": "Rubber Parts",
+        "quantity": 2
+      }
+    ]
+  },
+  "Blaze Grenade": {
+    "station": "Explosives Station",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Explosive Compound",
+        "quantity": 1
+      },
+      {
+        "material": "Oil",
+        "quantity": 2
+      }
+    ]
+  },
+  "Heavy Fuze Grenade": {
+    "station": "Explosives Station",
+    "level": "Level 3",
+    "required_materials": [
+      {
+        "material": "Explosive Compound",
+        "quantity": 1
+      },
+      {
+        "material": "Canister",
+        "quantity": 2
+      }
+    ]
+  },
+  "Herbal Bandage": {
+    "station": "Medical Lab",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Durable Cloth",
+        "quantity": 1
+      },
+      {
+        "material": "Great Mullein",
+        "quantity": 1
+      }
+    ]
+  },
+  "Adrenaline Shot": {
+    "station": "Medical Lab",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Chemicals",
+        "quantity": 3
+      },
+      {
+        "material": "Plastic Parts",
+        "quantity": 3
+      }
+    ]
+  },
+  "Steralized Bandage": {
+    "station": "Medical Lab",
+    "level": "Level 2",
+    "required_materials": []
+  },
+  "Surge Shield Recharger": {
+    "station": "Medical Lab",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Electrical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Advanced ARC Powercell",
+        "quantity": 1
+      }
+    ]
+  },
+  "Binoculars": {
+    "station": "Utility Station",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Plastic Parts",
+        "quantity": 8
+      },
+      {
+        "material": "Rubber Parts",
+        "quantity": 4
+      }
+    ]
+  },
+  "Li'l Smoke Greade": {
+    "station": "Utility Station",
+    "level": "Level 1",
+    "required_materials": []
+  },
+  "Door Blocker": {
+    "station": "Utility Station",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 3
+      },
+      {
+        "material": "Rubber Parts",
+        "quantity": 3
+      }
+    ]
+  },
+  "Raider Hatch Key": {
+    "station": "Utility Station",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Advanced Electrical Components",
+        "quantity": 1
+      },
+      {
+        "material": "Sensors",
+        "quantity": 3
+      }
+    ]
+  },
+  "Zipline": {
+    "station": "Utility Station",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Rope",
+        "quantity": 1
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 1
+      }
+    ]
+  },
+  "Photoelectric Cloak": {
+    "station": "Utility Station",
+    "level": "Level 3",
+    "required_materials": [
+      {
+        "material": "Advanced Electrical Components",
+        "quantity": 2
+      },
+      {
+        "material": "Speaker Component",
+        "quantity": 3
+      }
+    ]
+  },
+  "Electrical Components": {
+    "station": "Refiner",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Plastic Parts",
+        "quantity": 8
+      },
+      {
+        "material": "Rubber Parts",
+        "quantity": 4
+      }
+    ]
+  },
+  "Crude Explosives": {
+    "station": "Refiner",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Chemicals",
+        "quantity": 6
+      }
+    ]
+  },
+  "Mechanical Components": {
+    "station": "Refiner",
+    "level": "Level 1",
+    "required_materials": [
+      {
+        "material": "Metal Parts",
+        "quantity": 7
+      },
+      {
+        "material": "Rubber Parts",
+        "quantity": 3
+      }
+    ]
+  },
+  "Advanced Electrical Components": {
+    "station": "Refiner",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Wires",
+        "quantity": 3
+      },
+      {
+        "material": "Electrical Components",
+        "quantity": 2
+      }
+    ]
+  },
+  "Advanced Mechanical Components": {
+    "station": "Refiner",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Steel Spring",
+        "quantity": 2
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 2
+      }
+    ]
+  },
+  "Antiseptic": {
+    "station": "Refiner",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Chemicals",
+        "quantity": 10
+      },
+      {
+        "material": "Great Mullein",
+        "quantity": 2
+      }
+    ]
+  },
+  "ARC Circuitry": {
+    "station": "Refiner",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "ARC Alloy",
+        "quantity": 6
+      }
+    ]
+  },
+  "ARC Motion Core": {
+    "station": "Refiner",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "ARC Alloy",
+        "quantity": 6
+      }
+    ]
+  },
+  "Heavy Gun Parts": {
+    "station": "Refiner",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 4
+      }
+    ]
+  },
+  "Light Gun Parts": {
+    "station": "Refiner",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 4
+      }
+    ]
+  },
+  "Medium Gun Parts": {
+    "station": "Refiner",
+    "level": "Level 2",
+    "required_materials": [
+      {
+        "material": "Simple Gun Parts",
+        "quantity": 4
+      }
+    ]
+  },
+  "Magnetic Accelerator": {
+    "station": "Refiner",
+    "level": "Level 3",
+    "required_materials": [
+      {
+        "material": "ARC Motion Core",
+        "quantity": 2
+      },
+      {
+        "material": "Advanced Mechanical Components",
+        "quantity": 2
+      }
+    ]
+  },
+  "Mod Components": {
+    "station": "Refiner",
+    "level": "Level 3",
+    "required_materials": [
+      {
+        "material": "Steel Spring",
+        "quantity": 2
+      },
+      {
+        "material": "Mechanical Components",
+        "quantity": 2
+      }
+    ]
+  },
+  "Power Rod": {
+    "station": "Refiner",
+    "level": "Level 3",
+    "required_materials": [
+      {
+        "material": "Advanced Electrical Components",
+        "quantity": 2
+      },
+      {
+        "material": "ARC Circuitry",
+        "quantity": 2
+      }
+    ]
+  }
+}

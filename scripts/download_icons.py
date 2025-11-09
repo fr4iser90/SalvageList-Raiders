@@ -14,8 +14,12 @@ import time
 from bs4 import BeautifulSoup
 
 # Configuration
-ITEMS_JSON = "items.json"
-ICONS_DIR = "frontend/public/icons"
+# Get script directory and project root for relative paths
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(script_dir)
+ITEMS_JSON = os.path.join(project_root, 'data', 'items.json')
+ICONS_DIR = os.path.join(project_root, 'frontend', 'public', 'icons')
 DELAY_BETWEEN_REQUESTS = 0.5  # Be nice to the server
 
 def sanitize_filename(name):

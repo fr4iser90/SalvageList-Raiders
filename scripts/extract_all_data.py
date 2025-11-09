@@ -277,26 +277,39 @@ def main():
     workshop_data = extract_workshop_data()
     projects_data = extract_projects_data()
     
+    # Get script directory and project root
+    import os
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    data_dir = os.path.join(project_root, 'data')
+    frontend_public = os.path.join(project_root, 'frontend', 'public')
+    
+    # Create data directory if it doesn't exist
+    os.makedirs(data_dir, exist_ok=True)
+    
     # Save materials-info.json
-    with open('materials-info.json', 'w', encoding='utf-8') as f:
+    materials_path = os.path.join(data_dir, 'materials-info.json')
+    with open(materials_path, 'w', encoding='utf-8') as f:
         json.dump(materials_info, f, indent=2, ensure_ascii=False)
-    print(f"\n💾 Saved {len(materials_info)} materials to materials-info.json")
+    print(f"\n💾 Saved {len(materials_info)} materials to {materials_path}")
     
     # Save workshop_level_ups.json
-    with open('workshop_level_ups.json', 'w', encoding='utf-8') as f:
+    workshop_path = os.path.join(data_dir, 'workshop_level_ups.json')
+    with open(workshop_path, 'w', encoding='utf-8') as f:
         json.dump(workshop_data, f, indent=2, ensure_ascii=False)
-    print(f"💾 Saved workshop data to workshop_level_ups.json")
+    print(f"💾 Saved workshop data to {workshop_path}")
     
     # Save expedition_projects.json
-    with open('expedition_projects.json', 'w', encoding='utf-8') as f:
+    projects_path = os.path.join(data_dir, 'expedition_projects.json')
+    with open(projects_path, 'w', encoding='utf-8') as f:
         json.dump(projects_data, f, indent=2, ensure_ascii=False)
-    print(f"💾 Saved {len(projects_data)} projects to expedition_projects.json")
+    print(f"💾 Saved {len(projects_data)} projects to {projects_path}")
     
     # Copy to frontend/public
     import shutil
-    shutil.copy('materials-info.json', 'frontend/public/materials-info.json')
-    shutil.copy('workshop_level_ups.json', 'frontend/public/workshop_level_ups.json')
-    shutil.copy('expedition_projects.json', 'frontend/public/expedition_projects.json')
+    shutil.copy(materials_path, os.path.join(frontend_public, 'materials-info.json'))
+    shutil.copy(workshop_path, os.path.join(frontend_public, 'workshop_level_ups.json'))
+    shutil.copy(projects_path, os.path.join(frontend_public, 'expedition_projects.json'))
     print("\n✅ All data files copied to frontend/public/")
     
     print("\n" + "=" * 60)
