@@ -3,6 +3,11 @@
 
 import requests
 from bs4 import BeautifulSoup
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s')
+logger = logging.getLogger(__name__)
 
 BASE_URLS = ["https://arc-raiders.fandom.com", "https://arcraiders.wiki"]
 
@@ -42,7 +47,11 @@ def check_item(item_name):
                         if 'recipe' in text or 'craft' in text:
                             print(f"  ✓ {item_name}: {url}")
                             return True
-            except:
+            except (requests.RequestException, AttributeError, ValueError) as e:
+                logger.debug(f"Error checking {item_name} at {url}: {type(e).__name__}: {e}")
+                continue
+            except Exception as e:
+                logger.warning(f"Unexpected error checking {item_name} at {url}: {type(e).__name__}: {e}")
                 continue
     print(f"  ✗ {item_name}")
     return False

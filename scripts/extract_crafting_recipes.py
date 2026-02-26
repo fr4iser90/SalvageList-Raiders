@@ -10,6 +10,11 @@ import json
 import time
 import re
 import os
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s')
+logger = logging.getLogger(__name__)
 
 BASE_URLS = [
     "https://arcraiders.wiki",
@@ -178,7 +183,11 @@ def extract_crafting_recipes():
                         processed_pages.add(url)
                         time.sleep(0.3)
                         break
+                except (requests.RequestException, AttributeError, ValueError, KeyError) as e:
+                    logger.warning(f"Error processing URL {url}: {type(e).__name__}: {e}")
+                    continue
                 except Exception as e:
+                    logger.error(f"Unexpected error processing URL {url}: {type(e).__name__}: {e}")
                     continue
             
             if url in processed_pages:

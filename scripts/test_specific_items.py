@@ -4,6 +4,11 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s')
+logger = logging.getLogger(__name__)
 
 BASE_URLS = [
     "https://arc-raiders.fandom.com",
@@ -74,7 +79,11 @@ def check_item(item_name):
                                 print(f"    Tables: {recipe_tables[0]}")
                             return True
                         
+            except (requests.RequestException, AttributeError, ValueError) as e:
+                logger.debug(f"Error checking {item_name} at {url}: {type(e).__name__}: {e}")
+                continue
             except Exception as e:
+                logger.warning(f"Unexpected error checking {item_name} at {url}: {type(e).__name__}: {e}")
                 continue
     
     print(f"  ✗ {item_name}: No recipe found")
