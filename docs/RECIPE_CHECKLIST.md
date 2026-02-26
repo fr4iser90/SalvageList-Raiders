@@ -1,6 +1,6 @@
 # Crafting Recipes Checklist
 
-**Status:** 61/115 items have recipes (53%)
+**Status:** 60/115 items have recipes (52%)
 
 ---
 
@@ -42,13 +42,12 @@
 
 ## Gunsmith
 
-**Status:** 14/61 items have recipes
+**Status:** 13/61 items have recipes
 
 ### ✅ Items WITH recipes:
 
 - [x] **Angled Grip I** (Level 1) - 2 materials
 - [x] **Arpeggio I** (Level 2) - 2 materials
-- [x] **Compensator I** (Level 1) - 2 materials
 - [x] **Extended Light Mag I** (Level 1) - 2 materials
 - [x] **Extended Shotgun Mag I** (Level 1) - 2 materials
 - [x] **Ferro I** (Level 1) - 2 materials
@@ -69,6 +68,7 @@
 - [ ] **Arpeggio II** (Level 2)
 - [ ] **Arpeggio III** (Level 2)
 - [ ] **Arpeggio IV** (Level 2)
+- [ ] **Compensator I** (Level 1)
 - [ ] **Compensator II** (Level 1)
 - [ ] **Compensator III** (Level 1)
 - [ ] **Compensator IV** (Level 1)

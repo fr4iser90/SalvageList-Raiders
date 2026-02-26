@@ -39,24 +39,31 @@ function fuzzyMatch(query: string, text: string): { score: number; matched: bool
   return { score: 0, matched: false };
 }
 
-// Highlight matching text
+// Highlight matching text - using safe string-based approach to avoid ReDoS
 function highlightMatch(text: string, query: string): React.ReactNode {
-  if (!query) return <>{text}</>;
+  if (!query || query.length > 100) return <>{text}</>;
   
-  const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-  const parts = text.split(regex);
+  // Use simple string matching instead of regex to avoid ReDoS vulnerabilities
+  const queryLower = query.toLowerCase();
+  const textLower = text.toLowerCase();
+  const matchIndex = textLower.indexOf(queryLower);
+  
+  if (matchIndex === -1) {
+    return <>{text}</>;
+  }
+  
+  // Split text into before, match, and after parts
+  const before = text.slice(0, matchIndex);
+  const match = text.slice(matchIndex, matchIndex + query.length);
+  const after = text.slice(matchIndex + query.length);
   
   return (
     <>
-      {parts.map((part, index) =>
-        regex.test(part) ? (
-          <mark key={index} className="bg-orange-500/30 text-orange-200 px-1 rounded">
-            {part}
-          </mark>
-        ) : (
-          <span key={index}>{part}</span>
-        )
-      )}
+      <span>{before}</span>
+      <mark className="bg-orange-500/30 text-orange-200 px-1 rounded">
+        {match}
+      </mark>
+      <span>{after}</span>
     </>
   );
 }

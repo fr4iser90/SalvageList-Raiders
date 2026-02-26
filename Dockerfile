@@ -5,7 +5,6 @@ WORKDIR /app
 
 # Copy all source files first (node_modules excluded by .dockerignore)
 COPY frontend/ ./
-COPY items.json ./public/
 
 # Install dependencies (including devDependencies needed for build like TypeScript)
 # NODE_ENV is not set to production, so devDependencies will be installed for the build
@@ -26,8 +25,21 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 80
-EXPOSE 80
+# Create a non-root user for nginx
+RUN addgroup -g 1001 -S nginx-user && \
+    adduser -S -D -H -u 1001 -h /var/cache/nginx -s /sbin/nologin -G nginx-user -g nginx nginx-user && \
+    chown -R nginx-user:nginx-user /usr/share/nginx/html && \
+    chown -R nginx-user:nginx-user /var/cache/nginx && \
+    chown -R nginx-user:nginx-user /var/log/nginx && \
+    chown -R nginx-user:nginx-user /etc/nginx/conf.d && \
+    touch /var/run/nginx.pid && \
+    chown -R nginx-user:nginx-user /var/run/nginx.pid
+
+# Switch to non-root user
+USER nginx-user
+
+# Expose port 8080
+EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
 
